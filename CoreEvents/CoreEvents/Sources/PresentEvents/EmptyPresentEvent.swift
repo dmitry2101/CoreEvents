@@ -55,7 +55,7 @@ open class EmptyPresentEvent: EmptyEvent {
 // MARK: - Operations
 
 extension EmptyPresentEvent {
-    open static func += (left: EmptyPresentEvent, right: Lambda?) {
+    public static func += (left: EmptyPresentEvent, right: Lambda?) {
         guard let guardedRight = right else {
             return
         }

@@ -58,7 +58,7 @@ open class PresentEvent<Input>: Event<Input> {
 // MARK: - Operations
 
 extension PresentEvent {
-    open static func += (left: PresentEvent<Input>, right: Lambda?) {
+    public static func += (left: PresentEvent<Input>, right: Lambda?) {
         guard let guardedRight = right else {
             return
         }
